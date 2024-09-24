@@ -16,6 +16,7 @@ function handleDonation(cardBalanceId, inputId, donationBtnId, cardName) {
             return;
         }
 
+        document.getElementById('no-donation').classList.add('hidden');
         // Update balance and card donation amount
         const newTotalBalance = totalBalance - donationAmount;
         setTotalBalance(newTotalBalance);
