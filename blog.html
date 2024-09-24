@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,14 @@
     <title>Donate Bangladesh</title>
     <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.0/dist/full.css" rel="stylesheet" type="text/css" />
-    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
     <style>
-        .font-Lexend{
+        .font-Lexend {
             font-family: "Lexend", sans-serif;
         }
     </style>
@@ -22,7 +22,6 @@
 </head>
 
 <body class="bg-gray-50 font-Lexend">
-
     <header class="sticky top-0 z-50">
         <nav class="container mx-auto p-4 flex justify-between items-center sticky top-0 z-10 bg-orange-50 bg-opacity-50 backdrop-blur-lg">
             <button class="btn btn-success border-none bg-[#B4F461] font-semibold md:text-[20px]">
@@ -40,36 +39,71 @@
         </nav>
     </header>
 
-    <main class="container mx-auto mt-10 p-4">
-        <section class="bg-white rounded-lg shadow-md p-6">
-            <h1 class="text-3xl font-bold text-black mb-4">Frequently Asked Questions (FAQ)</h1>
-            
-            <div class="mb-6">
-                <h2 class="text-xl font-semibold text-black">1. What is the Document Object Model (DOM)?</h2>
-                <p class="text-black">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, which developers can interact with using JavaScript to manipulate the content, structure, and style of web pages dynamically.</p>
-            </div>
+    <main>
+        <section class="w-11/12 mx-auto my-8">
+            <h1 class="text-3xl md:text-5xl text-center">Importent FAQ</h1> <br>
+            <!-- faq div start  -->
+            <div class="w-11/12 mx-auto flex flex-col gap-4">
 
-            <div class="mb-6">
-                <h2 class="text-xl font-semibold text-black">2. How do you select an element from the DOM?</h2>
-                <p class="text-black">You can select an element from the DOM using various methods like document.getElementById(), document.querySelector(), or document.querySelectorAll(). These methods allow you to target specific elements by their ID, class, or other attributes.</p>
-            </div>
+                <!-- qn 1  -->
+                <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" checked="checked">
+                    <div class="collapse-title text-xl font-medium">What is the DOM in JavaScript?</div>
+                    <div class="collapse-content">
+                        <p>
+                            The Document Object Model (DOM) is a programming interface for web documents. It represents
+                            the structure of a document as a tree of objects, which developers can interact with using
+                            JavaScript to manipulate the content, structure, and style of web pages dynamically.</p>
+                    </div>
+                </div>
 
-            <div class="mb-6">
-                <h2 class="text-xl font-semibold text-black">3. What is event delegation in the context of the DOM, and why is it useful?</h2>
-                <p class="text-black">Event delegation is a technique where a single event listener is attached to a parent element instead of multiple child elements. It takes advantage of event bubbling, where events triggered on child elements propagate up to the parent. This is useful for improving performance, especially when dynamically adding or removing elements.</p>
-            </div>
+                <!-- qn2 -->
+                <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3">
+                    <div class="collapse-title text-xl font-medium">How do you find an element in the DOM?</div>
+                    <div class="collapse-content">
+                        <p>You can select an element from the DOM using various methods like document.getElementById(),
+                            document.querySelector(), or document.querySelectorAll(). These methods allow you to target
+                            specific elements by their ID, class, or other attributes.</p>
+                    </div>
+                </div>
 
-            <div class="mb-6">
-                <h2 class="text-xl font-semibold text-black">4. How do you manipulate an element's attributes and styles using the DOM?</h2>
-                <p class="text-black">To manipulate an element’s attributes, you can use methods like setAttribute() and getAttribute(). To modify styles, you can access the style property of an element and assign new values, for example: element.style.color = "red"; to change the text color.</p>
+                <!-- qn3 -->
+                <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3">
+                    <div class="collapse-title text-xl font-medium"> What is event delegation in the context of the DOM,
+                        and why is it useful?
+                    </div>
+                    <div class="collapse-content">
+                        <p>Event delegation is a technique where a single event listener is attached to a parent element
+                            instead of multiple child elements. It takes advantage of event bubbling, where events
+                            triggered on child elements propagate up to the parent. This is useful for improving
+                            performance, especially when dynamically adding or removing elements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- qn4  -->
+                <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3">
+                    <div class="collapse-title text-xl font-medium">How to manipulate attributes in JavaScript?</div>
+                    <div class="collapse-content">
+                        <p>To manipulate an element’s attributes, you can use methods like setAttribute() and
+                            getAttribute(). To modify styles, you can access the style property of an element and assign
+                            new values, for example: element.style.color = "red"; to change the text color.</p>
+                    </div>
+                </div>
+
             </div>
+            <!--! faq div ends  -->
+
         </section>
     </main>
 
-    <footer class="bg-gray-100 p-12 mt-10">
-        <div class="container mx-auto text-center">
-            <p class="text-gray-500"></p>
-        </div>
+    <footer class="bg-gray-100 p-12 mt-10"></footer>
+    <div class="container mx-auto text-center">
+        <p class="text-gray-500"></p>
+    </div>
     </footer>
 
 </body>
