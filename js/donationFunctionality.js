@@ -1,20 +1,4 @@
-// Common function to get input value
-function getInputValue(id) {
-    return parseFloat(document.getElementById(id).value);
-}
-
-// Function to get total balance from the DOM
-function getTotalBalance() {
-    return parseFloat(document.getElementById('total-balance').innerText);
-}
-
-// Function to set new total balance
-function setTotalBalance(newBalance) {
-    document.getElementById('total-balance').innerText = newBalance;
-}
-
-//card-balance1  dontion-input1 donate-btn1 card1
-// Function to handle donations for each card
+//Reusable function to handle donations for each card
 function handleDonation(cardBalanceId, inputId, donationBtnId, cardName) {
     document.getElementById(donationBtnId).addEventListener('click', function() {
         const donationAmount = getInputValue(inputId);
@@ -28,7 +12,7 @@ function handleDonation(cardBalanceId, inputId, donationBtnId, cardName) {
         }
 
         if (donationAmount > totalBalance) {
-            alert('You don’t have enough balance for this donation');
+            alert('You do not have enough balance for this donation');
             return;
         }
 
@@ -48,8 +32,10 @@ function handleDonation(cardBalanceId, inputId, donationBtnId, cardName) {
 }
 
 
-
-// document.getElementById('donate-btn1').addEventListener('click', handleDonation('card-balance1', 'dontion-input1', 'card1'));
+// Function to set new total balance
+function setTotalBalance(newBalance) {
+    document.getElementById('total-balance').innerText = newBalance;
+}
 
 // Call the donation function for each card
 handleDonation('card-balance1', 'dontion-input1', 'donate-btn1', 'Flood at Noakhali Issue');

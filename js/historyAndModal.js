@@ -4,7 +4,8 @@ function addTransactionToHistory(donationAmount, donationName) {
     const date = new Date().toLocaleString();
 
     const history = document.createElement('div');
-    const historyEntry = document.createElement('h3');
+    const historyEntry = document.createElement('h2');
+    historyEntry.classList.add('font-bold', 'text-lg');
     const time = document.createElement('p');
 
     historyEntry.innerText = `Donation: ${donationAmount} BDT for ${donationName}`;
