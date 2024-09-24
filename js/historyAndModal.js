@@ -1,7 +1,7 @@
 // Function to add a transaction to the history section
 function addTransactionToHistory(donationAmount, donationName) {
     const historyContainer = document.getElementById('historyData');
-    const date = new Date().toLocaleString();
+    const date = new Date();
 
     const history = document.createElement('div');
     const historyEntry = document.createElement('h2');
